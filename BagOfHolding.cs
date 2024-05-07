@@ -24,6 +24,7 @@ namespace BagOfHolding {
             _state.Yoinker = new Yoinker(_state);
             _state.Locker = new Locker(_state);
             _state.Settings = new Settings(_state, ModuleParameters.SettingsManager.ModuleSettings);
+            _state.OneOff = new OneOff(_state);
             _state.Bag = new Bag(_state) {
                 Size = new Point(256, 256),
                 Location = new Point(256, 256),

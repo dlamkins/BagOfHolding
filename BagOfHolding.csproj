@@ -186,6 +186,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BagOfHolding.cs" />
+    <Compile Include="OneOff.cs" />
     <Compile Include="Settings.cs" />
     <Compile Include="Yoinker.cs" />
     <Compile Include="Locker.cs" />

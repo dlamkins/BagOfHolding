@@ -15,12 +15,15 @@ namespace BagOfHolding {
 
         public CornerIcon Icon { get; set; }
 
+        public OneOff OneOff { get; set; }
+
         public void Start() {
             this.Yoinker.Start();
             this.Locker.Start();
         }
 
         public void Update() {
+            this.OneOff.Update();
             this.Yoinker.Update();
             this.Locker.Update();
         }

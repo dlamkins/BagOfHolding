@@ -84,8 +84,8 @@ namespace BagOfHolding {
         public void Update() {
             if (this.ActiveIcon != null) {
                 if (GameService.Input.Mouse.Position.Y > this.ActiveIcon.Bottom + _iconOffset.Y 
-                    || GameService.Input.Mouse.Position.X < this.ActiveIcon.Left
-                    || GameService.Input.Mouse.Position.X > this.ActiveIcon.Right) {
+                    || (!_state.OneOff.NexusShimIsRunning && GameService.Input.Mouse.Position.X < this.ActiveIcon.Left)
+                    || (!_state.OneOff.NexusShimIsRunning && GameService.Input.Mouse.Position.X > this.ActiveIcon.Right)) {
                     this.ActiveIcon.Visible = false;
                     _fakeIcon.Visible = true;
                     _fakeIcon.Location = GameService.Input.Mouse.Position - _iconOffset;
