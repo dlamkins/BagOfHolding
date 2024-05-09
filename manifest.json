@@ -1,6 +1,6 @@
 ﻿{
   "name": "Bag of Holding",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "namespace": "fs.bagofholding",
   "package": "BagOfHolding.dll",
   "manifest_version": 1,

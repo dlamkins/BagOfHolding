@@ -8,7 +8,7 @@ using System.Linq;
 namespace BagOfHolding {
     internal class Locker {
 
-        private const int LOCKED_PRIORITY = int.MinValue + 1;
+        public const int LOCKED_PRIORITY = int.MinValue + 1;
 
         private readonly ModuleState _state;
 
