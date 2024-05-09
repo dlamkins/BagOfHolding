@@ -51,7 +51,9 @@ namespace BagOfHolding {
 
             if (GameService.Input.Mouse.ActiveControl == _state.Bag) {
                 icon = _state.Bag.GetIconFromRelativePosition().Icon;
-                _iconOffset = new Point(icon.Size.X / 2, icon.Size.Y / 2);
+                if (icon != null) {
+                    _iconOffset = new Point(icon.Size.X / 2, icon.Size.Y / 2);
+                }
             } else if (GameService.Input.Mouse.ActiveControl is CornerIcon ci) {
                 icon = ci;
                 _iconOffset = icon.RelativeMousePosition;
