@@ -62,13 +62,15 @@ namespace BagOfHolding {
 
         public void Update() {
             // Find any that should be in the bag, but aren't.
-            foreach (var controls in GameService.Graphics.SpriteScreen.Children) {
-                if (controls is CornerIcon icon) {
-                    if (_lockedUp.Value.Contains(icon.Priority)) {
-                        LockUp(icon);
+            try {
+                foreach (var controls in GameService.Graphics.SpriteScreen.Children) {
+                    if (controls is CornerIcon icon) {
+                        if (_lockedUp.Value.Contains(icon.Priority)) {
+                            LockUp(icon);
+                        }
                     }
                 }
-            }
+            } catch (System.InvalidOperationException) { /* NOOP - it's not 100% safe to enumerate the children. */ }
 
             // Throw out the dead ones.
             foreach (var cell in this.Icons.ToArray()) {
