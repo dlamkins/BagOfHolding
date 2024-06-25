@@ -188,6 +188,12 @@
     <Compile Include="BagOfHolding.cs" />
     <Compile Include="OneOff.cs" />
     <Compile Include="Settings.cs" />
+    <Compile Include="UI\Controls\Selectors\AlignmentSelector.cs" />
+    <Compile Include="UI\Controls\Selectors\IconSelector.cs" />
+    <Compile Include="UI\Controls\Selectors\ItemSelector.cs" />
+    <Compile Include="UI\Controls\SettingsItemSelector.cs" />
+    <Compile Include="UI\Textures.cs" />
+    <Compile Include="UI\Views\SettingsView.cs" />
     <Compile Include="Yoinker.cs" />
     <Compile Include="Locker.cs" />
     <Compile Include="ModuleState.cs" />

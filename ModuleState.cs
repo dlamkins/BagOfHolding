@@ -1,6 +1,7 @@
 ﻿using BagOfHolding.UI.Controls;
 using Blish_HUD.Controls;
 using Blish_HUD.Settings;
+using BagOfHolding.UI;
 
 namespace BagOfHolding {
     internal class ModuleState {
@@ -16,6 +17,8 @@ namespace BagOfHolding {
         public CornerIcon Icon { get; set; }
 
         public OneOff OneOff { get; set; }
+
+        public Textures Textures { get; set; }
 
         public void Start() {
             this.Yoinker.Start();

@@ -5,6 +5,7 @@ using Blish_HUD.Input;
 using BagOfHolding.UI.Controls;
 using System.Collections.Generic;
 using Microsoft.Xna.Framework.Input;
+using System;
 
 namespace BagOfHolding {
     internal class Yoinker {
@@ -37,6 +38,7 @@ namespace BagOfHolding {
         private void GlobalLeftMouseButtonReleased(object sender, MouseEventArgs e) {
             if (this.ActiveIcon != null) {
                 if (_state.Bag.AbsoluteBounds.Contains(GameService.Input.Mouse.Position)) {
+                    //Logger.GetLogger<Yoinker>().Info($"{this.ActiveIcon.BasicTooltipText}: {this.ActiveIcon.Priority} {this.ActiveIcon.GetType().FullName}");
                     _state.Locker.LockUp(this.ActiveIcon);
                 } else {
                     _state.Locker.Release(this.ActiveIcon);
