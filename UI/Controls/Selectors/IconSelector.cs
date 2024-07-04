@@ -1,18 +1,12 @@
 ﻿using Blish_HUD;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using SharpDX.WIC;
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Security.Cryptography.X509Certificates;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BagOfHolding.UI.Controls.Selectors {
     internal class IconSelector : ItemSelector {
 
-        private ModuleState _state;
+        private readonly ModuleState _state;
 
         private int _index = 0;
 

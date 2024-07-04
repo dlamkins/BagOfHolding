@@ -70,7 +70,7 @@ namespace BagOfHolding {
                         }
                     }
                 }
-            } catch (System.InvalidOperationException) { /* NOOP - it's not 100% safe to enumerate the children. */ }
+            } catch (InvalidOperationException) { /* NOOP - it's not 100% safe to enumerate the children. */ }
 
             // Throw out the dead ones.
             foreach (var cell in this.Icons.ToArray()) {

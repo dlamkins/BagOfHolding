@@ -4,15 +4,13 @@ using Microsoft.Xna.Framework;
 using Blish_HUD.Input;
 using BagOfHolding.UI.Controls;
 using System.Collections.Generic;
-using Microsoft.Xna.Framework.Input;
-using System;
 
 namespace BagOfHolding {
     internal class Yoinker {
 
         private readonly ModuleState _state;
 
-        private List<int> _ignoreList = new List<int>() {
+        private readonly List<int> _ignoreList = new List<int>() {
             2147483647, // Blish HUD icon
         };
 

@@ -1,18 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using BagOfHolding.UI.Controls;
+﻿using BagOfHolding.UI.Controls;
 using Blish_HUD.Controls;
-using Blish_HUD.Graphics;
 using Blish_HUD.Graphics.UI;
 using BagOfHolding.UI.Controls.Selectors;
 
 namespace BagOfHolding.UI.Views {
     internal class SettingsView : View {
 
-        private ModuleState _state;
+        private readonly ModuleState _state;
 
         public SettingsView(ModuleState state) {
             _state = state;

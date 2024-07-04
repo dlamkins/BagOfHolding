@@ -73,9 +73,9 @@ namespace BagOfHolding {
                 _state.Settings.IconImage.Value = 0;
             }
 
-            var curIcon = _state.Textures.CornerIconOptions[_state.Settings.IconImage.Value];
-            _state.Icon.Icon = curIcon.Icon;
-            _state.Icon.HoverIcon = curIcon.Hover;
+            var (icon, hover) = _state.Textures.CornerIconOptions[_state.Settings.IconImage.Value];
+            _state.Icon.Icon = icon;
+            _state.Icon.HoverIcon = hover;
         }
 
         public override IView GetSettingsView() {
@@ -83,7 +83,6 @@ namespace BagOfHolding {
         }
 
         protected override void Unload() {
-            _state?.Textures?.Unload();
             _state?.Bag?.Dispose();
             _state?.Icon?.Dispose();
             _state?.Stop();

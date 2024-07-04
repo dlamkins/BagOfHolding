@@ -1,6 +1,5 @@
 ﻿using BagOfHolding.UI.Controls;
 using Blish_HUD.Controls;
-using Blish_HUD.Settings;
 using BagOfHolding.UI;
 
 namespace BagOfHolding {

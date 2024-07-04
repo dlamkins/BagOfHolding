@@ -1,11 +1,11 @@
 ﻿{
   "name": "Bag of Holding",
-  "version": "0.1.4",
+  "version": "1.0.0",
   "namespace": "fs.bagofholding",
   "package": "BagOfHolding.dll",
   "manifest_version": 1,
 
-  "description": "Makes organizing corner icons easier.  Drag icons in the top left corner into the Bag of Holding to reduce some of the clutter.  Drag them back out whenever you want.",
+  "description": "Makes organizing corner icons easier.  Drag icons in the top left corner into the Bag of Holding to reduce some of the clutter.  Drag them back out whenever you want.  Warning: Some icons may fail to stay in the bag between sessions.  Those icons will require their developer to provide an update.",
   "dependencies": {
     "bh.blishhud": ">=1.0.0"
   },
